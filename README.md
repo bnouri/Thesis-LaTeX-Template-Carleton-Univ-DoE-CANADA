@@ -66,8 +66,8 @@ NOTE: Carleton does nor use the word Dissertation!
 For a manuscript format PhD. dissertation: \usepackage[manuscript,phd]{cuthesis}
 For a standard format PhD. dissertation with a four member committee: \usepackage[phd,4committee]{cuthesis}
 
-  Notes:
-  ------
+*** Notes:
+    ------
 (1) The acknowledgements, preface, contributions, and dedication sections are not required, but the ABSTRACT section is.
 
 (2) By default the department named on the title page is ``Department of Electronics'', but that can be changed by putting the command: \dept{My Department} in the main .tex file before any of the chapters are included.
