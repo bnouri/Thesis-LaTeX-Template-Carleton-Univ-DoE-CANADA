@@ -60,7 +60,8 @@ N.B.: I found ``nonsequential'' prefereable as it makes it easier to trance the 
 For a standard format masters thesis:
 \usepackage{cuthesis}
 
-NOTE: CARLETON DOES NOT USE THE WORD DISSERTATION!
+NOTE: Carleton does nor use the word Dissertation!
+
 For a manuscript format PhD. dissertation: \usepackage[manuscript,phd]{cuthesis}
 For a standard format PhD. dissertation with a four member committee: \usepackage[phd,4committee]{cuthesis}
 
