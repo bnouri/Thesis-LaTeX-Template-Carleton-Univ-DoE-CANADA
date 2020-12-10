@@ -3,10 +3,11 @@
 This LaTeX package is used to create theses at Carleton University.
 
 Important to Note
- In the FINAL submission No internal links is allowed in the thesis final-PDF.
- They can be disabled by commenting-out the hyperref[] in the "SBNth.sty" file!
- Keeping it is helpful in the writing process though!
- The acknowledgments, preface, contributions, and dedication sections are not required, but the ABSTRACT section is.
+
+* In the FINAL submission No internal links is allowed in the thesis final-PDF.
+* They can be disabled by commenting-out the hyperref[] in the "SBNth.sty" file!
+* Keeping it is helpful in the writing process though!
+* The acknowledgments, preface, contributions, and dedication sections are not required, but the ABSTRACT section is.
 
 
 Sections in the Thesis:
