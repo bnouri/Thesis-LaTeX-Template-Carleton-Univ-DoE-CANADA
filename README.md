@@ -32,27 +32,28 @@ The following sections will mainly be created automatically:
 
 
 Options for cuthesis.sty:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+======================================================================
 This LaTeX package is used to create theses at Carleton University.
--- It has several options which are described below.
--- Multiple options can be included as a comma separated list.
--- See the examples for common uses.
+* It has several options which are described below.
+* Multiple options can be included as a comma separated list.
+* See the examples for common uses.
 
 Options:
--------
-manuscript,standard: this specifies which format of thesis you will be creating. Manuscript format has the references at the end of each chapter, while standard format has one reference section for the whole document. standard is the default.
+
+* manuscript,standard: 
+This specifies which format of thesis you will be creating. Manuscript format has the references at the end of each chapter, while standard format has one reference section for the whole document. standard is the default.
 
 N.B.: Do NOT use ``Manuscript'' for the final submission. It may be useful if you are editting your thesis chapter-by-chapter
 
-phd,masters: this specifies whether this is a PhD. dissertation or a masters thesis. masters is the default.
+* phd,masters: this specifies whether this is a PhD. dissertation or a masters thesis. masters is the default.
 
--- 1committee, 2committee, 3committee,4committee,5committee: 
+* 1committee, 2committee, 3committee,4committee,5committee: 
 this is the number of people on your committee (in addition to the department chair), which determines how many signature lines are needed. Remember that the chairman of the committee does not sign the thesis.
-*** 1committee is the default.
+# 1committee is the default.
 NOTE: Due to the recent change (2019) to the theses handeling process the ``SIGNATURE PAGE'', including the committee, will be taken care of by the departments graduate secretary, so do NOT worry about this. Also, leave it to be the default value!
 
--- sequential,nonsequential: 
-this specifies whether you want numbering of figures, equations, and tables reset to 1 at the beginning of each chapter (nonsequential), or if you want the numbers to be sequential throughout the whole document. The default is nonsequential for Manuscript format and sequential for Standard format.
+* sequential,nonsequential: 
+This specifies whether you want numbering of figures, equations, and tables reset to 1 at the beginning of each chapter (nonsequential), or if you want the numbers to be sequential throughout the whole document. The default is nonsequential for Manuscript format and sequential for Standard format.
 
 N.B.: I found ``nonsequential'' prefereable as it makes it easier to trance the figures ... Since CU has not explicitly mentioned any specific standard for this option Following our preference and in favor of legibility, we set this option to nonsequential. (Dec.2020, Behzad)
 
@@ -75,3 +76,10 @@ For a standard format PhD. dissertation with a four member committee: \usepackag
    (a) In compliance with the Carleton University Library's biblical Format the ``ieeetran.bst'' (IEEE Transactions) bibliography style is used. Generally, it is a part of    
        standard MikTeX distribution, and we do not to include it in our files.
    (b) It uses the same fontsize (10pt/12pt) defined in \documentclass[]().
+   
+   
+   
+=====================================================================================================
+Fair Use Note:
+This LaTeX-sty file is distributed in the hope that it will be useful, but without implied/assumed warranty of merchantability or fitness for a particular purpose, other than specified. It is for being used without any warranty at users' own risk.
+===================================================================================================== 
