@@ -80,5 +80,6 @@ For a standard format PhD. dissertation with a four member committee: \usepackag
    
    
 *** Fair Use Note:
+
 This LaTeX-sty file is distributed in the hope that it will be useful, but without implied/assumed warranty of merchantability or fitness for a particular purpose, other than specified. It is for being used without any warranty at users' own risk.
 
