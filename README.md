@@ -57,8 +57,8 @@ N.B.: I found ``nonsequential'' prefereable as it makes it easier to trance the 
 
 *** Examples:
     ---------
-For a standard format masters thesis:
-\usepackage{cuthesis}
+
+For a standard format masters thesis:  \usepackage{cuthesis}
 
 NOTE: Carleton does nor use the word Dissertation!
 
