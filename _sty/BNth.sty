@@ -1,0 +1,123 @@
+%--------------------------------------------------------------%
+% Version: 2020-12-08                                          %
+%--------------------                                          %
+% Copyright (C) 2020, Behzad NOURI, bn@ieee.org                %
+% This LaTeX sty file is distributed in the hope that it will  %
+% be useful, but WITHOUT ANY WARRANTY; without even the        %
+% implied/assumed warranty of MERCHANTABILITY or FITNESS FOR A %
+% PARTICULAR PURPOSE.                                          %
+% (See the GNU General Public License for more details.)       %
+%--------------------------------------------------------------%
+\PackageInfo{package-name}{info-text}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{_sty/BNth}[2020/12/08 Control package]
+
+\RequirePackage{_sty/IEEEtrantools}
+
+%% Graphic, SubFigures, & Colors:
+\RequirePackage{ifpdf} 
+\ifpdf
+  \RequirePackage[pdftex]{graphicx}
+  \RequirePackage{epstopdf}
+  \DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png,.gif,.eps,.ps}
+  \else
+  \RequirePackage[dvips]{graphicx}
+  \DeclareGraphicsExtensions{.ps,.eps}
+\fi
+\pdfminorversion=7
+\RequirePackage{float,rotating} %for image placement
+\RequirePackage[caption=false,font=footnotesize]{subfig}    
+
+\RequirePackage{xcolor}
+\RequirePackage{setspace}
+
+%% Bibiliography:
+\RequirePackage{cite}
+
+%% Alignmnet:
+\RequirePackage{array}
+
+%% Tabular:
+\RequirePackage{longtable,multirow}
+
+%% Math:
+\RequirePackage{amsmath}
+\interdisplaylinepenalty=2500
+\RequirePackage{amsthm, amssymb, amscd, latexsym, cases, mdwmath}
+\RequirePackage{amsfonts, mathrsfs}    %math fonts
+
+\newtheorem{theorem}{Theorem} 
+\newtheorem{lemma}{Lemma}%[theorem]
+\newtheorem{proposition}{Proposition}%[theorem]
+\newtheorem{corollary}{Corollary}%[theorem]
+\newtheorem{definition}{Definition}%[theorem]
+
+\RequirePackage{comment}
+\RequirePackage{siunitx}
+
+%\RequirePackage{algorithm,algorithmic}   %%<== IEEE sugessted
+%%Or
+ \RequirePackage[ruled,vlined]{algorithm2e}
+%\RequirePackage{algorithmicx}
+
+%% FlowChart:
+\RequirePackage{pst-node, pst-3d}
+\RequirePackage{pst-blur}
+
+%% Enumerated/Itemized Lists:
+\RequirePackage{enumerate,enumitem}
+\newcommand{\packed}{\setlength{\itemsep}{0pt} \setlength{\parskip}{0pt}			
+	\setlength{\parsep}{0pt}}
+
+\newenvironment{packed-center}{%
+	\setlength\topsep{0pt}
+	\setlength\parskip{0pt}
+	\begin{center}
+	}{\end{center}}
+\renewcommand\centerline[1]{\begin{packed-center}#1\end{packed-center}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  In the FINAL submission MUST comment-out the internal hyperlinks     %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage[allbordercolors=red]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%      Short-Hands:     %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\bm}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\bs}[1]{\mbox{$\boldsymbol{#1}$}}
+
+\providecommand{\norm}[1]{\lvert#1\rvert} 
+
+%% $Formatted$:
+\newcommand{\op}[1]{\operatorname{#1}} 
+\newcommand{\mathat}[1]{\mathbf{\hat{#1}}}
+\newcommand{\matbar}[1]{\mathbf{\bar{#1}}}
+
+\newcommand{\reg}[1]{\mbox{#1\textsuperscript{\textregistered}}}
+\newcommand{\sub}[1]{\textsubscript{#1}}
+
+\newcommand{\p}{^\prime}  %For thefirst derivative
+\newcommand{\T}{{\raisebox{4pt}{$^\intercal$}}}
+
+\newcommand{\EPS}{\boldsymbol{\mathlarger{{\varepsilon}}}}
+\newcommand{\trieq}{\buildrel \Delta \over =}
+
+\newcommand{\LHS}{\mathbb{C}^{-}}  %Open left-half plane in complex s-plane
+\newcommand{\RHS}{\mathbb{C}^{+}}  %Open right-half plane in complex s-plane
+
+\newcommand{\Sec}[1]{\mbox{Section~\ref{#1}}}
+\newcommand{\App}[1]{\mbox{Appendix~\ref{#1}}}
+\newcommand{\Fig}[1]{\mbox{Fig.~\ref{#1}}}  %%==> Figures
+\newcommand{\Tab}[1]{\mbox{Table~\ref{#1}}} %%==> Tables
+\newcommand{\Thm}[1]{\mbox{Theorem~\ref{#1}}}
+\newcommand{\Lem}[1]{\mbox{Lemma~\ref{#1}}}
+\newcommand{\Cor}[1]{\mbox{Corollary~\ref{#1}}}
+\newcommand{\Algo}[1]{\mbox{Algorithm~\ref{#1}}}
+\newcommand{\Flow}[1]{\mbox{Flowchart~\ref{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\endinput      %%%%% <-EoF: LaTeX will ignore anything after this line.
+%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,75 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[12pt,letterpaper]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%      A Master's or PhD degree?     %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%--For PhD thesis:
+\usepackage[phd,nonsequential]{_sty/cuthesis}
+
+%%--For Masters Thesis:
+%\usepackage[nonsequential]{_sty/cuthesis}
+
+%----------------------------------------------------------------------------
+% For more information about available options in ``cuthesis.sty'': 
+% Either: Open the file and review the heading comments.
+% Or: Refere to the ``ReadMe.pdf'' file in the root directory 
+%-----------------------------------------------------------------------------
+\usepackage{_sty/BNth}  %This brings more useful packages into the game 
+
+% Defines relative path to folder containing your figures.
+% Using the following, you cannot have different figure-files with the same name!
+\graphicspath{{./figs/}{./ch1/img}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%   Define Specifics     %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define various variables required by cuthesis.sty to function properly
+
+% Title must not include any symbols or Greek letters – write out the meaning
+\title{Place the Title of Your Thesis Here}
+
+% Author Name is as ``First-Name Last-Name'' must be the name under which 
+% you are registered with the university and must be the same name as on 
+% the accompanying copyright:
+\author{FirstName LastName}
+
+% Specify your Thesis Submission Date:
+\submitdate{September 2020} \copyrightyear{2020}
+
+% According to Carleton's new format the following information is not needed!
+% \input{FrontMatter/SupervisorsInfo}
+
+
+% This is the name of the .bib files that holds all of your references.
+% It can be a comma separated list if there is more than one file.
+\reffile{references}
+
+% Defines relative path to folder containing your figures
+\graphicspath{{Figs/}}
+
+
+% The followings are the names of the .tex files which hold the respective section 
+% of the thesis. 
+% If one of these sections is not included, comment out the corresponding line.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%      Chapters:      %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{FrontMatter/abstract}
+\acknowledgements{FrontMatter/acknowledgements}     %Optional
+\acronyms{FrontMatter/acronyms}
+\symbols{FrontMatter/symbols}
+%\preface{FrontMatter/preface}         %Optional
+%\dedication{FrontMatter/dedication}   %Optional
+
+% Include the chapters.
+\newchapter{./xch1/chapter1}
+\newchapter{chapter2}
+
+
+% Include any appendices.
+\newappendix{zBackMatter/appendixA}
+
+\end{document}

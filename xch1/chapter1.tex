@@ -1,0 +1,107 @@
+\chapter{Introduction}
+
+\section{First Section}
+First paragraph \cite{Doe}.
+
+Second paragraph.  Sample reference to \Fig{fig:above-below}.  Just some extra text to see how the text
+wrapping looks in a compiled pdf document.
+
+% Single Figure
+\begin{figure}
+  \centering
+  \includegraphics[trim=0pt 0pt 0pt 0pt, clip=true,
+  keepaspectratio=true, width=0.5\textwidth]{universe.jpg} \\
+  \caption{Sample of a single image.}\label{fig:single2}
+\end{figure}
+
+Just some extra text to see how the text wrapping looks in a
+compiled pdf document. Just some extra text to see how the text
+wrapping looks in a compiled pdf document. Just some extra text to
+see how the text wrapping looks in a compiled pdf document. Just
+some extra text to see how the text wrapping looks in a compiled
+pdf document. Just some extra text to see how the text wrapping
+looks in a compiled pdf document.
+\newpage
+\begin{enumerate}
+	\item item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 
+	\item item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 
+	\item item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 
+\end{enumerate}
+
+\begin{enumerate}
+	\packed
+	\item item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 item1 
+	\item item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 item2 
+	\item item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 item3 
+\end{enumerate}
+
+\begin{enumerate}
+	\packed
+	\item One
+	\item Two
+	\item Three
+	\begin{enumerate}
+		\item test
+		\item best
+	\end{enumerate}
+\end{enumerate}
+
+\begin{itemize}
+	\packed
+	\item A
+	\item B
+	\item C
+\end{itemize}
+
+Just some extra text to see how the text wrapping looks in a
+compiled pdf document. Just some extra text to see how the text
+wrapping looks in a compiled pdf document. Just some extra text to
+see how the text wrapping looks in a compiled pdf document. Just
+some extra text to see how the text wrapping looks in a compiled
+pdf document.
+
+% Side-by-side subfigure
+\begin{figure}
+     \centering
+      \subfloat[Case I]{\includegraphics[width=0.1\textwidth]{CUlogo.eps}}\hfil
+      \subfloat[Case II]{\includegraphics[width=0.4\textwidth]{DOE.png}}
+    \caption{Samble side-by-side subfigures} \label{fig:side-by-side}
+\end{figure}
+
+Just some extra text to see how the text wrapping looks in a
+compiled pdf document. Just some extra text to see how the text
+wrapping looks in a compiled pdf document.
+
+% Above-below subfigure
+\begin{figure}
+    \centering
+    \subfloat[Case I]{\includegraphics[width=0.1\textwidth]{CUlogo.eps}} \hspace{24pt}
+    \subfloat[Case II]{\includegraphics[width=0.1\textwidth]{CUlogo.png}}
+    \caption{Samble above-below subfigures} \label{fig:above-below}
+\end{figure}
+
+\section{Section Demonstrating Tables}
+First paragraph.  This is a sample reference to \Tab{tab:sample}.
+
+\begin{table}
+  \centering
+  \caption{Sample table. With an extra long caption to test how captions will wrap.}\label{tab:sample}
+    \vspace{6pt} % Required to get proper spacing between caption and table
+  \begin{tabular}{c c c}
+    \hline
+    Label 1 & Label 2 & Label 3 \\
+    \hline\hline
+    value 1 & $x_1$ & $y_1$ \\
+    value 2 & $x_2$ & $y_2$ \\
+    value 3 & $x_3$ & $y_3$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+New paragraph.
+
+\begin{equation}\label{eqn:newton_law}
+    F = Ma
+\end{equation}
+
+Paragraph referencing an \eqref{eqn:newton_law}.
