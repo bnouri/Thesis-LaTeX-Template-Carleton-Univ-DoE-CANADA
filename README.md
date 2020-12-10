@@ -57,9 +57,7 @@ this specifies whether you want numbering of figures, equations, and tables rese
 N.B.: I found ``nonsequential'' prefereable as it makes it easier to trance the figures ... Since CU has not explicitly mentioned any specific standard for this option Following our preference and in favor of legibility, we set this option to nonsequential. (Dec.2020, Behzad)
 
 *** Examples:
-
     ---------
-
 For a standard format masters thesis:  \usepackage{cuthesis}
 
 NOTE: Carleton does nor use the word Dissertation!
